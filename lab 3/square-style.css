@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    position: relative;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    animation-name: square-primary;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+.shadow {
+    position: absolute;
+}
+
+@keyframes shadow {
+    0% {
+        right: 200px;
+    }
+    50% {
+        right: 1600px;
+    }
+    100% {
+        right: 200px;
+    }
+}
+
+@keyframes square-primary {
+    0% {
+        right: 200px;
+    }
+    50% {
+        right: 1600px;
+    }
+    100% {
+        right: 200px;
+    }
+}
